@@ -1,0 +1,24 @@
+<section class="product-list-container">
+  <ul>
+    <li *ngFor="let product of products">
+      <button
+        class="remove-button"
+        mat-icon-fab
+        color="primary"
+        (click)="deleteProduct(product)"
+      >
+        <mat-icon>trash</mat-icon>
+      </button>
+      <picture>
+        <img
+          [src]="product.picture ?? 'assets/images/product-place-holder.png'"
+        />
+      </picture>
+      <article>
+        <h2 class="max-lines-2">{{ product.name }}</h2>
+        <p class="max-lines-2">{{ product.description }}</p>
+        <span>{{ product.price | currency }}</span>
+      </article>
+    </li>
+  </ul>
+</section>

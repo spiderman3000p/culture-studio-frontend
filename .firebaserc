@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pickvoice": {
+      "hosting": {
+        "culture-studio-frontend": [
+          "culture-studio"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pickvoice"
+  }
+}

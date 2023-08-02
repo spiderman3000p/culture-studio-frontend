@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "culture-studio-frontend",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
